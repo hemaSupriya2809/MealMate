@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bill</title>
+
+<link rel="stylesheet" href="css/bill.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="bill">
+
+<img src="image/logo.png" class="logo">
+
+<h1>ONLINE CANTEEN BILLING SYSTEM</h1>
+
+<p id="date"></p>
+
+<hr>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Food</th>
+
+<th>Qty</th>
+
+<th>Price</th>
+
+<th>Total</th>
+
+</tr>
+
+</thead>
+
+<tbody id="billTable">
+
+</tbody>
+
+</table>
+
+<hr>
+
+<h3>Subtotal : ₹ <span id="subtotal"></span></h3>
+
+<h3>GST (5%) : ₹ <span id="gst"></span></h3>
+
+<h2>Grand Total : ₹ <span id="grand"></span></h2>
+
+<div class="buttons">
+
+<button onclick="placeOrder()">
+
+Place Order
+
+</button>
+
+<button onclick="window.print()">
+
+Print Bill
+
+</button>
+
+</div>
+
+</div>
+
+<script src="js/bill.js"></script>
+
+</body>
+</html>

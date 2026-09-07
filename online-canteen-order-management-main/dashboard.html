@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Dashboard</title>
+
+<link rel="stylesheet" href="css/dashboard.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+
+<img src="image/logo.png">
+
+<h2>Online Canteen</h2>
+
+</div>
+
+<ul>
+
+<li><a href="dashboard.html">Home</a></li>
+
+<li><a href="menu.html">Menu</a></li>
+
+<li><a href="cart.html">Cart</a></li>
+
+<li><a href="orders.html">Orders</a></li>
+
+<li><a href="#" id="logout">Logout</a></li>
+
+</ul>
+
+</nav>
+
+<header>
+
+<h1 id="welcome"></h1>
+
+<p>Enjoy Fresh & Delicious Food Every Day 🍕🍔🥤</p>
+
+</header>
+
+<section class="cards">
+
+<div class="card">
+
+<img src="image/pizza.jpg">
+
+<h3>Pizza</h3>
+
+<p>Cheesy & Delicious</p>
+
+<a href="menu.html">Order Now</a>
+
+</div>
+
+<div class="card">
+
+<img src="image/burger.jpg">
+
+<h3>Burger</h3>
+
+<p>Hot & Crispy</p>
+
+<a href="menu.html">Order Now</a>
+
+</div>
+
+<div class="card">
+
+<img src="image/dosa.jpg">
+
+<h3>Dosa</h3>
+
+<p>South Indian Special</p>
+
+<a href="menu.html">Order Now</a>
+
+</div>
+
+<div class="card">
+
+<img src="image/coffee.jpg">
+
+<h3>Coffee</h3>
+
+<p>Freshly Brewed</p>
+
+<a href="menu.html">Order Now</a>
+
+</div>
+
+</section>
+
+</body>
+
+<script>
+
+let user=JSON.parse(localStorage.getItem("loggedInUser"));
+
+if(!user){
+
+window.location.href="login.html";
+
+}
+
+document.getElementById("welcome").innerHTML="Welcome, "+user.name+" 👋";
+
+document.getElementById("logout").onclick=function(){
+
+localStorage.removeItem("loggedInUser");
+
+window.location.href="login.html";
+
+}
+
+</script>
+
+</html>
