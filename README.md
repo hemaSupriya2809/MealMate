@@ -194,7 +194,8 @@ Clearing browser cache or site data will reset custom users, active cart items, 
 Passwords and sessions in this version are maintained on the client for lightweight, standalone deployment[cite: 1].
 
 👨‍💻 Author
-Hema
+
+Hema Supriya T
 
 B.E. Computer Science Engineering
 
